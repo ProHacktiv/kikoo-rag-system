@@ -1,0 +1,27 @@
+# Configuration à ajouter dans votre système RAG
+RAG_CONFIG = {
+    "delivery_settings": {
+        "legal_delay_days": 12,
+        "auto_escalate_after_days": 12,
+        "status_workflow": [
+            "PENDING", "PRODUCTION", "TESTING", 
+            "PICKING", "SHIPPED", "DELIVERED"
+        ],
+        "escalation_triggers": [
+            "délai dépassé",
+            "colis perdu",
+            "mauvaise adresse après expédition",
+            "produit manquant"
+        ],
+        "required_integrations": [
+            "odoo_orders_api",
+            "ups_tracking_api"
+        ]
+    },
+    "response_templates": {
+        "greeting": "Bonjour, je suis l'assistant automatique FlowUp.",
+        "closing": "Puis-je vous aider pour autre chose ?",
+        "escalation": "Je transfère votre demande à un opérateur qui vous contactera dans les plus brefs délais.",
+        "apology": "Je suis désolé pour ce désagrément."
+    }
+}

@@ -1,0 +1,30 @@
+{
+  "timestamp": "2025-10-21T17:53:51.135289",
+  "total_tests": 5,
+  "successful_tests": 1,
+  "success_rate": 0.2,
+  "detailed_results": {
+    "uc263_detector": {
+      "positive_accuracy": 1.0,
+      "negative_accuracy": 1.0,
+      "overall_accuracy": 1.0,
+      "status": "✅ SUCCÈS"
+    },
+    "odoo_checker": {
+      "status": "❌ ERREUR",
+      "error": "attempted relative import beyond top-level package"
+    },
+    "improved_detector": {
+      "status": "❌ ERREUR",
+      "error": "attempted relative import beyond top-level package"
+    },
+    "response_engine": {
+      "status": "❌ ERREUR",
+      "error": "attempted relative import beyond top-level package"
+    },
+    "system_monitor": {
+      "status": "❌ ERREUR",
+      "error": "'status'"
+    }
+  }
+}

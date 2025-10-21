@@ -1,0 +1,11 @@
+{
+  "url": "https://www.flowup.shop",
+  "db": "production",
+  "username": "dev@flowup.shop",
+  "password": "778930494948866d0af309bf61226d7ec91f9c87",
+  "extraction": {
+    "limit": 50000,
+    "date_from": "2024-01-01",
+    "date_to": "2025-12-31"
+  }
+}

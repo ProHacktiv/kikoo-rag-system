@@ -1,0 +1,650 @@
+# ==================== UC Mappings Configuration ====================
+# config/uc_mappings.yaml
+
+uc_definitions:
+  # === DELIVERY / LOGISTICS ===
+  UC_337:
+    name: "Estimation de livraison"
+    keywords:
+      - estimation
+      - livraison
+      - délai
+      - quand
+      - recevoir
+      - expédié
+      - combien de temps
+      - date
+      - prévue
+    category: DELIVERY
+    priority: HIGH
+    auto_escalate: false
+    max_delay_days: 12
+
+  UC_421:
+    name: "Suivi de colis"
+    keywords:
+      - tracking
+      - suivi
+      - numéro
+      - trace
+      - ups
+      - colissimo
+      - transporteur
+      - où est
+    category: DELIVERY
+    priority: MEDIUM
+    auto_escalate: false
+
+  UC_426:
+    name: "Colis non reçu"
+    keywords:
+      - pas reçu
+      - pas livré
+      - perdu
+      - non livré
+      - jamais arrivé
+      - introuvable
+    category: DELIVERY
+    priority: URGENT
+    auto_escalate: true
+    
+  UC_438:
+    name: "Changement d'adresse"
+    keywords:
+      - changement adresse
+      - nouvelle adresse
+      - modifier adresse
+      - déménagé
+      - mauvaise adresse
+    category: DELIVERY
+    priority: HIGH
+    auto_escalate: false
+
+  UC_427:
+    name: "Erreur de livraison"
+    keywords:
+      - mauvaise adresse
+      - erreur livraison
+      - mauvais destinataire
+    category: DELIVERY
+    priority: HIGH
+    auto_escalate: true
+
+  # === HARDWARE ===
+  UC_263:
+    name: "Problème carte graphique"
+    keywords:
+      - carte graphique
+      - gpu
+      - rtx
+      - nvidia
+      - amd
+      - radeon
+      - geforce
+      - affichage
+      - écran noir
+      - artefacts
+      - freeze
+    category: HARDWARE
+    priority: HIGH
+    auto_escalate: false
+
+  UC_266:
+    name: "Problème carte mère"
+    keywords:
+      - carte mère
+      - motherboard
+      - bios
+      - uefi
+      - boot
+      - démarrage
+    category: HARDWARE
+    priority: URGENT
+    auto_escalate: true
+
+  UC_267:
+    name: "Problème alimentation"
+    keywords:
+      - alimentation
+      - ne démarre pas
+      - s'éteint
+      - power
+      - redémarre
+      - coupure
+      - électrique
+    category: HARDWARE
+    priority: URGENT
+    auto_escalate: true
+
+  UC_268:
+    name: "Problème SSD/HDD"
+    keywords:
+      - ssd
+      - hdd
+      - disque
+      - stockage
+      - nvme
+      - crucial
+      - samsung
+      - espace
+      - capacité
+    category: HARDWARE
+    priority: MEDIUM
+    auto_escalate: false
+
+  UC_269:
+    name: "Problème refroidissement"
+    keywords:
+      - surchauffe
+      - température
+      - chaleur
+      - ventilateur
+      - refroidissement
+      - watercooling
+      - thermique
+      - cpu chaud
+      - gpu chaud
+    category: HARDWARE
+    priority: URGENT
+    auto_escalate: true
+
+  UC_270:
+    name: "Dysfonctionnement périphériques"
+    keywords:
+      - périphérique
+      - usb
+      - clavier
+      - souris
+      - webcam
+      - micro
+      - casque
+      - ne fonctionne pas
+    category: HARDWARE
+    priority: MEDIUM
+    auto_escalate: false
+
+  # === SOFTWARE ===
+  UC_272:
+    name: "Problème Windows"
+    keywords:
+      - windows
+      - système
+      - activation
+      - clé
+      - licence
+      - windows 10
+      - windows 11
+      - mise à jour
+      - erreur système
+    category: SOFTWARE
+    priority: HIGH
+    auto_escalate: false
+
+  UC_278:
+    name: "Installation logiciels"
+    keywords:
+      - installation
+      - logiciel
+      - driver
+      - pilote
+      - installer
+      - télécharger
+      - setup
+    category: SOFTWARE
+    priority: MEDIUM
+    auto_escalate: false
+
+  # === GAMING PERFORMANCE ===
+  UC_287:
+    name: "Saccades et freezes"
+    keywords:
+      - saccade
+      - freeze
+      - lag
+      - fps
+      - performance
+      - lent
+      - rame
+      - stuttering
+    category: GAMING
+    priority: HIGH
+    auto_escalate: false
+
+  # === RGB LIGHTING ===
+  UC_291:
+    name: "RGB non fonctionnel"
+    keywords:
+      - rgb
+      - led
+      - éclairage
+      - lumière
+      - couleur
+      - corsair
+      - icue
+      - aura
+    category: RGB
+    priority: LOW
+    auto_escalate: false
+
+  UC_293:
+    name: "Problème logiciel RGB"
+    keywords:
+      - icue
+      - aura sync
+      - rgb fusion
+      - mystic light
+      - logiciel rgb
+    category: RGB
+    priority: LOW
+    auto_escalate: false
+
+  UC_295:
+    name: "Précision couleurs"
+    keywords:
+      - couleur
+      - boîtier
+      - teinte
+      - nuance
+      - pas la bonne couleur
+    category: RGB
+    priority: LOW
+    auto_escalate: false
+
+  # === SALES ===
+  UC_306:
+    name: "Demande de remboursement"
+    keywords:
+      - remboursement
+      - rembourser
+      - argent
+      - annuler
+    category: SALES
+    priority: URGENT
+    auto_escalate: true
+
+  UC_313:
+    name: "Garantie et échange"
+    keywords:
+      - garantie
+      - échange
+      - remplacement
+      - retour
+      - défaut
+      - cassé
+      - défectueux
+    category: RETURNS
+    priority: URGENT
+    auto_escalate: true
+
+  UC_320:
+    name: "Configuration personnalisée"
+    keywords:
+      - configuration
+      - personnalisation
+      - custom
+      - sur mesure
+      - devis
+      - composer
+    category: SALES
+    priority: MEDIUM
+    auto_escalate: false
+
+  UC_321:
+    name: "Compatibilité composants"
+    keywords:
+      - compatible
+      - compatibilité
+      - fonctionne avec
+      - marche avec
+      - supporter
+    category: SALES
+    priority: MEDIUM
+    auto_escalate: false
+
+  UC_327:
+    name: "Promotion et codes"
+    keywords:
+      - promotion
+      - code
+      - réduction
+      - soldes
+      - promo
+      - discount
+      - offre
+    category: SALES
+    priority: LOW
+    auto_escalate: false
+
+  UC_331:
+    name: "Substitution composants"
+    keywords:
+      - remplacer
+      - substituer
+      - changer
+      - autre composant
+      - à la place
+    category: SALES
+    priority: MEDIUM
+    auto_escalate: false
+
+  UC_332:
+    name: "Personnalisation esthétique"
+    keywords:
+      - design
+      - esthétique
+      - look
+      - apparence
+      - style
+      - custom loop
+    category: SALES
+    priority: LOW
+    auto_escalate: false
+
+  UC_335:
+    name: "Disponibilité produits"
+    keywords:
+      - disponible
+      - stock
+      - en stock
+      - rupture
+      - quand disponible
+    category: SALES
+    priority: MEDIUM
+    auto_escalate: false
+
+  UC_336:
+    name: "Statut précommande"
+    keywords:
+      - précommande
+      - pré-commander
+      - réservation
+      - pre-order
+    category: SALES
+    priority: MEDIUM
+    auto_escalate: false
+
+  UC_365:
+    name: "Demande commerciale générale"
+    keywords:
+      - acheter
+      - commander
+      - prix
+      - coût
+      - tarif
+      - combien
+    category: SALES
+    priority: MEDIUM
+    auto_escalate: false
+
+  # === BILLING ===
+  UC_341:
+    name: "Vérification paiement"
+    keywords:
+      - paiement
+      - payé
+      - virement
+      - carte
+      - transaction
+      - débit
+    category: BILLING
+    priority: HIGH
+    auto_escalate: false
+
+  UC_343:
+    name: "Paiement en plusieurs fois"
+    keywords:
+      - 3 fois
+      - 4 fois
+      - alma
+      - plusieurs fois
+      - échelonné
+      - mensualité
+    category: BILLING
+    priority: MEDIUM
+    auto_escalate: false
+
+  # === CUSTOMER CARE ===
+  UC_366:
+    name: "Historique commande"
+    keywords:
+      - historique
+      - anciennes commandes
+      - déjà commandé
+      - précédente commande
+    category: CUSTOMER_CARE
+    priority: LOW
+    auto_escalate: false
+
+  UC_369:
+    name: "Confirmation commande"
+    keywords:
+      - confirmation
+      - mail confirmation
+      - reçu commande
+      - validée
+    category: CUSTOMER_CARE
+    priority: MEDIUM
+    auto_escalate: false
+
+  # === PARTNERSHIPS ===
+  UC_402:
+    name: "Demande partenariat"
+    keywords:
+      - partenariat
+      - collaboration
+      - sponsor
+      - influenceur
+      - tournoi
+      - équipe
+    category: PARTNERSHIPS
+    priority: LOW
+    auto_escalate: true
+
+# ==================== Response Templates ====================
+# config/response_templates.yaml
+
+response_templates:
+  # Greeting obligatoire
+  greeting: "Bonjour, je suis l'assistant automatique FlowUp."
+
+  # Templates par UC
+  UC_337:
+    within_delay: |
+      Je consulte immédiatement votre commande dans notre système.
+      
+      📦 Commande : {order_id}
+      📊 Statut actuel : {status}
+      ⏱️ En production depuis : {days} jours ouvrés
+      
+      ✅ Votre commande respecte notre délai standard de 12 jours ouvrés maximum.
+      Vous devriez recevoir votre PC gaming d'ici {remaining} jours ouvrés.
+      
+      💡 Astuce : Vous recevrez un email avec le numéro de suivi dès l'expédition.
+
+    delay_exceeded: |
+      ⚠️ Je constate que votre commande {order_id} a été passée il y a {days} jours ouvrés.
+      
+      Ce délai dépasse notre engagement de 12 jours ouvrés maximum.
+      
+      🚨 ESCALADE PRIORITAIRE ACTIVÉE
+      Notre équipe de direction va vous contacter dans l'heure pour :
+      - Vous donner une date d'expédition ferme
+      - Vous proposer une compensation pour ce retard
+      
+      Nous sommes sincèrement désolés pour cette situation.
+
+    no_context: |
+      Je vais immédiatement vérifier le statut de votre commande dans notre système.
+      
+      D'après nos données, votre dernière commande est bien en cours de traitement.
+      Notre équipe production va vous envoyer une mise à jour détaillée dans les 2 heures.
+
+  UC_263:
+    diagnostic: |
+      Je comprends que vous rencontrez un problème avec votre carte graphique.
+      
+      🔧 Procédure de diagnostic rapide :
+      
+      1️⃣ **Vérification physique** :
+         - Éteignez complètement le PC
+         - Vérifiez que la carte graphique est bien enfoncée dans son slot
+         - Contrôlez que les câbles d'alimentation PCIe sont bien connectés
+      
+      2️⃣ **Mise à jour des pilotes** :
+         - Téléchargez DDU (Display Driver Uninstaller)
+         - Désinstallez complètement les anciens pilotes
+         - Installez la dernière version depuis le site NVIDIA/AMD
+      
+      3️⃣ **Test de température** :
+         - Installez GPU-Z ou HWiNFO64
+         - Surveillez les températures (ne doivent pas dépasser 85°C)
+      
+      Si le problème persiste après ces étapes, notre équipe technique prendra le relais immédiatement.
+
+  UC_269:
+    critical_temp: |
+      🔴 ALERTE SURCHAUFFE DÉTECTÉE - ACTION IMMÉDIATE REQUISE
+      
+      ⚠️ **ÉTEIGNEZ VOTRE PC IMMÉDIATEMENT** pour éviter tout dommage.
+      
+      Une fois éteint, procédez aux vérifications suivantes :
+      
+      1️⃣ **Ventilateurs** : Vérifiez que tous tournent librement
+      2️⃣ **Poussière** : Nettoyez les filtres et radiateurs
+      3️⃣ **Position** : Assurez-vous que le PC a 10cm d'espace minimum autour
+      4️⃣ **Pâte thermique** : Peut nécessiter un remplacement
+      
+      🚨 Notre équipe technique va vous appeler dans les 30 minutes pour un diagnostic approfondi.
+      
+      ⚠️ NE RALLUMEZ PAS le PC avant notre appel.
+
+  UC_313:
+    warranty_claim: |
+      Je comprends parfaitement votre demande de retour/échange sous garantie.
+      
+      ✅ **Votre garantie FlowUp** :
+      - Durée : 2 ans pièces et main d'œuvre
+      - Couvre : L'ensemble de votre configuration
+      - Transport retour : Pris en charge par FlowUp
+      
+      📋 **Procédure simplifiée** :
+      1. Notre équipe SAV va vous contacter sous 24h
+      2. Vous recevrez une étiquette de retour prépayée
+      3. Diagnostic sous 48h après réception
+      4. Réparation ou échange selon le diagnostic
+      
+      🚀 Votre demande est transmise en priorité à notre service après-vente.
+
+  UC_426:
+    package_missing: |
+      🚨 Je comprends votre inquiétude concernant la non-réception de votre commande.
+      
+      Je lance immédiatement les actions suivantes :
+      
+      1️⃣ **Enquête transporteur** : Localisation exacte du colis
+      2️⃣ **Vérification adresse** : Confirmation des coordonnées de livraison
+      3️⃣ **Escalade prioritaire** : Votre dossier passe en urgence absolue
+      
+      📞 Notre responsable logistique va vous appeler dans l'heure avec :
+      - La localisation précise de votre colis
+      - Une solution immédiate (nouvelle expédition si nécessaire)
+      - Une compensation pour ce désagrément
+      
+      Nous prenons cette situation très au sérieux.
+
+  # Multi-UC response
+  multi_uc:
+    template: |
+      J'ai identifié plusieurs points importants dans votre message :
+      
+      {responses}
+      
+      🎯 Notre équipe va traiter l'ensemble de ces points en priorité.
+      Vous recevrez une réponse personnalisée pour chaque problème identifié.
+
+  # Escalation footer
+  escalation:
+    standard: |
+      
+      ⚠️ **ESCALADE PRIORITAIRE**
+      Votre demande nécessite une attention particulière et a été transmise 
+      à notre équipe spécialisée qui vous contactera dans les plus brefs délais.
+
+    urgent: |
+      
+      🚨 **ESCALADE URGENTE - PRIORITÉ ABSOLUE**
+      Votre situation a été classée comme critique.
+      Un responsable va vous contacter dans l'heure.
+
+  # Default/Unknown
+  unknown:
+    template: |
+      Je comprends votre demande, mais j'ai besoin de plus d'informations pour vous aider efficacement.
+      
+      Notre équipe support va analyser votre message en détail et vous apporter 
+      une réponse personnalisée dans les 2 heures.
+      
+      Pour accélérer le traitement, vous pouvez préciser :
+      - La nature exacte du problème
+      - Quand il est survenu
+      - Ce que vous avez déjà essayé
+
+# ==================== Business Rules ====================
+
+business_rules:
+  max_delivery_delay: 12  # jours ouvrés
+  
+  auto_escalation_triggers:
+    - keyword: "remboursement"
+    - keyword: "avocat"
+    - keyword: "procédure"
+    - keyword: "inadmissible"
+    - delay_exceeded: true
+    - multiple_tickets: 3  # Si client a déjà 3+ tickets
+    
+  priority_rules:
+    urgent:
+      - surchauffe
+      - ne démarre pas
+      - s'éteint
+      - fumée
+      - odeur
+      - remboursement
+      
+    high:
+      - carte graphique
+      - windows
+      - livraison
+      - garantie
+      
+    medium:
+      - installation
+      - configuration
+      - suivi
+      
+    low:
+      - rgb
+      - esthétique
+      - information
+
+# ==================== Metrics Configuration ====================
+
+metrics:
+  sla_targets:
+    first_response:
+      urgent: 30  # minutes
+      high: 2    # heures
+      medium: 4  # heures
+      low: 24    # heures
+      
+  kpi_objectives:
+    category_accuracy: 95  # %
+    uc_accuracy: 90       # %
+    escalation_accuracy: 100  # %
+    customer_satisfaction: 4.5  # /5
+    
+  monitoring:
+    alert_thresholds:
+      escalation_rate: 20  # % max
+      unresolved_urgent: 5  # tickets max
+      response_time_breach: 10  # % max
