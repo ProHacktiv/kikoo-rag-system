@@ -1,0 +1,13 @@
+{
+  "id": "TICKET-001",
+  "subject": "Commande non reçue après 5 jours",
+  "category": "delivery",
+  "solution": "Le colis a été expédié mais il y a eu un retard dans la livraison. J'ai contacté UPS et le colis devrait arriver demain. Vous recevrez une notification par email dès qu'il sera livré.",
+  "resolved_at": "2024-01-15T10:30:00Z",
+  "customer_id": "CUST-123",
+  "order_number": "SO-456789",
+  "tracking_number": "1Z999AA1234567890",
+  "resolution_time": "2h 15min",
+  "agent": "support_agent_1",
+  "tags": ["delivery", "ups", "delay"]
+}

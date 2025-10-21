@@ -1,0 +1,1205 @@
+{
+  "test_date": "2025-10-21T15:56:09.570318",
+  "total_tickets": 50,
+  "results": [
+    {
+      "ticket_id": "36514",
+      "detected_category": "DELIVERY",
+      "detected_uc": 337,
+      "confidence": 1.0,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJ'ai trouvé votre commande CMD-2024-001 du 14/10/2025.\n\n✅ **Votre commande est dans les délais légaux**\n• Commandée il y a : 7 jours\n• Délai maximum : 12 jours ouvrés\n• Jours restants : 5 jours\n• Statut actuel : EN PRODUCTION\n\n\n\nPuis-je vous aider pour autre chose ?\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented",
+        "odoo_checked",
+        "delivery_status_provided",
+        "odoo_integration_used"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 1.0,
+        "escalation_correct": false,
+        "response_quality": 100,
+        "score": 100
+      },
+      "processing_time": 8.7e-05
+    },
+    {
+      "ticket_id": "36226",
+      "detected_category": "SALES",
+      "detected_uc": 306,
+      "confidence": 1.0,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe comprends votre demande de remboursement.\n\nEn tant qu'assistant automatique, je ne peux pas traiter directement les demandes de remboursement ou d'échange.\n\nJe transfère immédiatement votre demande à un opérateur spécialisé avec priorité ÉLEVÉE.\n\nUn membre de notre équipe vous contactera dans les plus brefs délais.\n\n\n\nJe transfère votre demande à un opérateur qui pourra mieux vous aider.\n\nRaison : Demande de remboursement\nPriorité : IMMEDIATE\n\nVous serez contacté dans les plus brefs délais.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": true,
+      "escalation_reason": "Demande de remboursement",
+      "priority": "IMMEDIATE",
+      "actions_taken": [
+        "bot_presented",
+        "odoo_checked",
+        "escalated_IMMEDIATE",
+        "odoo_integration_used"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 1.0,
+        "escalation_correct": false,
+        "response_quality": 70,
+        "score": 100
+      },
+      "processing_time": 6.2e-05
+    },
+    {
+      "ticket_id": "36489",
+      "detected_category": "DELIVERY",
+      "detected_uc": 421,
+      "confidence": 1.0,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented",
+        "odoo_checked",
+        "delivery_status_provided",
+        "odoo_integration_used"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 1.0,
+        "escalation_correct": false,
+        "response_quality": 100,
+        "score": 100
+      },
+      "processing_time": 4.5e-05
+    },
+    {
+      "ticket_id": "36345",
+      "detected_category": "DELIVERY",
+      "detected_uc": 426,
+      "confidence": 1.0,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe comprends que votre livraison est incomplète.\n\n📦 **Éléments commandés :**\n• PC Gamer RTX 4060\n• Écran 27 pouces\n\n⚠️ **Éléments manquants détectés.**\n\nJe transfère votre réclamation au service logistique avec priorité ÉLEVÉE.\nUn opérateur vous contactera dans les 2 heures.\n\nJe vous présente nos excuses pour cette erreur.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "HIGH",
+      "actions_taken": [
+        "bot_presented",
+        "odoo_checked",
+        "delivery_status_provided",
+        "odoo_integration_used"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 1.0,
+        "escalation_correct": false,
+        "response_quality": 100,
+        "score": 100
+      },
+      "processing_time": 4.5e-05
+    },
+    {
+      "ticket_id": "36412",
+      "detected_category": "DELIVERY",
+      "detected_uc": 421,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "HIGH",
+      "actions_taken": [
+        "bot_presented",
+        "odoo_checked",
+        "delivery_status_provided",
+        "odoo_integration_used"
+      ],
+      "performance": {
+        "category_match": false,
+        "uc_match": false,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 60,
+        "score": 10
+      },
+      "processing_time": 4.2e-05
+    },
+    {
+      "ticket_id": "36567",
+      "detected_category": "DELIVERY",
+      "detected_uc": 337,
+      "confidence": 0.8999999999999999,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJ'ai trouvé votre commande CMD-2024-001 du 14/10/2025.\n\n✅ **Votre commande est dans les délais légaux**\n• Commandée il y a : 7 jours\n• Délai maximum : 12 jours ouvrés\n• Jours restants : 5 jours\n• Statut actuel : EN PRODUCTION\n\n\n\nPuis-je vous aider pour autre chose ?\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented",
+        "odoo_checked",
+        "delivery_status_provided",
+        "odoo_integration_used"
+      ],
+      "performance": {
+        "category_match": false,
+        "uc_match": false,
+        "confidence": 0.8999999999999999,
+        "escalation_correct": false,
+        "response_quality": 100,
+        "score": 18
+      },
+      "processing_time": 4.4e-05
+    },
+    {
+      "ticket_id": "36378",
+      "detected_category": "HARDWARE",
+      "detected_uc": 269,
+      "confidence": 1.0,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe comprends que vous rencontrez un problème technique avec le système de refroidissement.\n\n🔧 **Solutions à essayer :**\n1. Nettoyer les filtres à poussière\n2. Vérifier que les ventilateurs tournent\n3. Appliquer un profil de ventilation plus agressif\n4. Vérifier la pâte thermique du processeur\n5. Vérifier l'orientation des ventilateurs\n\nSi le problème persiste après ces vérifications, je peux transférer votre demande à un technicien.\n\nCes solutions ont-elles résolu votre problème ?\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented",
+        "technical_solution_provided",
+        "knowledge_base_searched"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 1.0,
+        "escalation_correct": false,
+        "response_quality": 100,
+        "score": 100
+      },
+      "processing_time": 4.6e-05
+    },
+    {
+      "ticket_id": "36456",
+      "detected_category": "SOFTWARE",
+      "detected_uc": 277,
+      "confidence": 0.9999999999999999,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe comprends que vous rencontrez un problème technique avec la connexion réseau.\n\n🔧 **Solutions à essayer :**\n1. Redémarrer le routeur/modem\n2. Vérifier les câbles réseau\n3. Tester la connexion WiFi\n4. Vérifier les paramètres réseau\n5. Contacter votre FAI si nécessaire\n\nSi le problème persiste après ces vérifications, je peux transférer votre demande à un technicien.\n\nCes solutions ont-elles résolu votre problème ?\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented",
+        "software_solution_provided"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.9999999999999999,
+        "escalation_correct": false,
+        "response_quality": 100,
+        "score": 99
+      },
+      "processing_time": 5.2e-05
+    },
+    {
+      "ticket_id": "36289",
+      "detected_category": "DELIVERY",
+      "detected_uc": 337,
+      "confidence": 0.9999999999999999,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJ'ai trouvé votre commande CMD-2024-001 du 14/10/2025.\n\n✅ **Votre commande est dans les délais légaux**\n• Commandée il y a : 7 jours\n• Délai maximum : 12 jours ouvrés\n• Jours restants : 5 jours\n• Statut actuel : EN PRODUCTION\n\n\n\nPuis-je vous aider pour autre chose ?\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented",
+        "odoo_checked",
+        "delivery_status_provided",
+        "odoo_integration_used"
+      ],
+      "performance": {
+        "category_match": false,
+        "uc_match": false,
+        "confidence": 0.9999999999999999,
+        "escalation_correct": false,
+        "response_quality": 100,
+        "score": 19
+      },
+      "processing_time": 5.3e-05
+    },
+    {
+      "ticket_id": "36523",
+      "detected_category": "HARDWARE",
+      "detected_uc": 263,
+      "confidence": 0.8999999999999999,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe comprends que vous rencontrez un problème technique avec votre carte graphique.\n\n🔧 **Solutions à essayer :**\n1. Vérifier les câbles d'alimentation de la carte graphique\n2. Mettre à jour les pilotes graphiques\n3. Vérifier les températures avec HWMonitor\n4. Tester avec une autre sortie vidéo\n5. Vérifier que la carte est bien enfichée\n\nSi le problème persiste après ces vérifications, je peux transférer votre demande à un technicien.\n\nCes solutions ont-elles résolu votre problème ?\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented",
+        "technical_solution_provided",
+        "knowledge_base_searched"
+      ],
+      "performance": {
+        "category_match": false,
+        "uc_match": false,
+        "confidence": 0.8999999999999999,
+        "escalation_correct": false,
+        "response_quality": 100,
+        "score": 18
+      },
+      "processing_time": 4.7e-05
+    },
+    {
+      "ticket_id": "36145",
+      "detected_category": "DELIVERY",
+      "detected_uc": 337,
+      "confidence": 0.9999999999999999,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJ'ai trouvé votre commande CMD-2024-001 du 14/10/2025.\n\n✅ **Votre commande est dans les délais légaux**\n• Commandée il y a : 7 jours\n• Délai maximum : 12 jours ouvrés\n• Jours restants : 5 jours\n• Statut actuel : EN PRODUCTION\n\n\n\nPuis-je vous aider pour autre chose ?\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented",
+        "odoo_checked",
+        "delivery_status_provided",
+        "odoo_integration_used"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.9999999999999999,
+        "escalation_correct": false,
+        "response_quality": 100,
+        "score": 99
+      },
+      "processing_time": 6e-05
+    },
+    {
+      "ticket_id": "36434",
+      "detected_category": "HARDWARE",
+      "detected_uc": 270,
+      "confidence": 0.8999999999999999,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe comprends que vous rencontrez un problème technique avec les périphériques.\n\n🔧 **Solutions à essayer :**\n1. Vérifier les connexions USB\n2. Tester sur un autre port USB\n3. Redémarrer le PC\n4. Vérifier les pilotes des périphériques\n5. Tester avec un autre périphérique\n\nSi le problème persiste après ces vérifications, je peux transférer votre demande à un technicien.\n\nCes solutions ont-elles résolu votre problème ?\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "HIGH",
+      "actions_taken": [
+        "bot_presented",
+        "technical_solution_provided",
+        "knowledge_base_searched"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.8999999999999999,
+        "escalation_correct": false,
+        "response_quality": 100,
+        "score": 98
+      },
+      "processing_time": 4.9e-05
+    },
+    {
+      "ticket_id": "36312",
+      "detected_category": "HARDWARE",
+      "detected_uc": 284,
+      "confidence": 0.9999999999999999,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe comprends que vous rencontrez un problème technique avec l'écran.\n\n🔧 **Solutions à essayer :**\n1. Vérifier les câbles de connexion\n2. Tester avec un autre câble\n3. Vérifier la source d'alimentation de l'écran\n4. Tester avec un autre écran\n5. Vérifier les paramètres d'affichage\n\nSi le problème persiste après ces vérifications, je peux transférer votre demande à un technicien.\n\nCes solutions ont-elles résolu votre problème ?\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "HIGH",
+      "actions_taken": [
+        "bot_presented",
+        "technical_solution_provided",
+        "knowledge_base_searched"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.9999999999999999,
+        "escalation_correct": false,
+        "response_quality": 100,
+        "score": 99
+      },
+      "processing_time": 5.4e-05
+    },
+    {
+      "ticket_id": "36578",
+      "detected_category": "DELIVERY",
+      "detected_uc": 421,
+      "confidence": 0.9999999999999999,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented",
+        "odoo_checked",
+        "delivery_status_provided",
+        "odoo_integration_used"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.9999999999999999,
+        "escalation_correct": false,
+        "response_quality": 100,
+        "score": 99
+      },
+      "processing_time": 4.5e-05
+    },
+    {
+      "ticket_id": "36234",
+      "detected_category": "DELIVERY",
+      "detected_uc": 423,
+      "confidence": 0.9999999999999999,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented",
+        "odoo_checked",
+        "delivery_status_provided",
+        "odoo_integration_used"
+      ],
+      "performance": {
+        "category_match": false,
+        "uc_match": false,
+        "confidence": 0.9999999999999999,
+        "escalation_correct": false,
+        "response_quality": 100,
+        "score": 19
+      },
+      "processing_time": 4e-05
+    },
+    {
+      "ticket_id": "36467",
+      "detected_category": "DELIVERY",
+      "detected_uc": 432,
+      "confidence": 0.8999999999999999,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented",
+        "odoo_checked",
+        "delivery_status_provided",
+        "odoo_integration_used"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.8999999999999999,
+        "escalation_correct": false,
+        "response_quality": 100,
+        "score": 98
+      },
+      "processing_time": 3.8e-05
+    },
+    {
+      "ticket_id": "36589",
+      "detected_category": "SALES",
+      "detected_uc": 336,
+      "confidence": 0.9999999999999999,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe comprends votre question concernant la disponibilité.\n\nJe vais vérifier la disponibilité de ce produit et vous recontacter.\n\nUn conseiller commercial vous contactera pour plus de détails.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented",
+        "odoo_checked",
+        "odoo_integration_used"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": false,
+        "confidence": 0.9999999999999999,
+        "escalation_correct": false,
+        "response_quality": 100,
+        "score": 59
+      },
+      "processing_time": 3.8e-05
+    },
+    {
+      "ticket_id": "36356",
+      "detected_category": "DELIVERY",
+      "detected_uc": 423,
+      "confidence": 0.8999999999999999,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented",
+        "odoo_checked",
+        "delivery_status_provided",
+        "odoo_integration_used"
+      ],
+      "performance": {
+        "category_match": false,
+        "uc_match": false,
+        "confidence": 0.8999999999999999,
+        "escalation_correct": false,
+        "response_quality": 100,
+        "score": 18
+      },
+      "processing_time": 3.8e-05
+    },
+    {
+      "ticket_id": "36423",
+      "detected_category": "SALES",
+      "detected_uc": 368,
+      "confidence": 0.9999999999999999,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "HIGH",
+      "actions_taken": [
+        "bot_presented",
+        "odoo_checked",
+        "odoo_integration_used"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.9999999999999999,
+        "escalation_correct": false,
+        "response_quality": 100,
+        "score": 99
+      },
+      "processing_time": 3.9e-05
+    },
+    {
+      "ticket_id": "36278",
+      "detected_category": "DELIVERY",
+      "detected_uc": 421,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nJe transfère votre demande à un opérateur qui pourra mieux vous aider.\n\nRaison : Urgence exprimée\nPriorité : NORMAL\n\nVous serez contacté dans les plus brefs délais.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": true,
+      "escalation_reason": "Urgence exprimée",
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented",
+        "odoo_checked",
+        "escalated_NORMAL",
+        "delivery_status_provided",
+        "odoo_integration_used"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": false,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 50
+      },
+      "processing_time": 4.4e-05
+    },
+    {
+      "ticket_id": "36521",
+      "detected_category": "UNKNOWN",
+      "detected_uc": 0,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 90
+      },
+      "processing_time": 3.7e-05
+    },
+    {
+      "ticket_id": "36522",
+      "detected_category": "UNKNOWN",
+      "detected_uc": 0,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 90
+      },
+      "processing_time": 3.1e-05
+    },
+    {
+      "ticket_id": "36523",
+      "detected_category": "UNKNOWN",
+      "detected_uc": 0,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 90
+      },
+      "processing_time": 2.8e-05
+    },
+    {
+      "ticket_id": "36524",
+      "detected_category": "UNKNOWN",
+      "detected_uc": 0,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 90
+      },
+      "processing_time": 2.7e-05
+    },
+    {
+      "ticket_id": "36525",
+      "detected_category": "UNKNOWN",
+      "detected_uc": 0,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 90
+      },
+      "processing_time": 2.8e-05
+    },
+    {
+      "ticket_id": "36526",
+      "detected_category": "UNKNOWN",
+      "detected_uc": 0,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 90
+      },
+      "processing_time": 2.7e-05
+    },
+    {
+      "ticket_id": "36527",
+      "detected_category": "UNKNOWN",
+      "detected_uc": 0,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 90
+      },
+      "processing_time": 2.7e-05
+    },
+    {
+      "ticket_id": "36528",
+      "detected_category": "UNKNOWN",
+      "detected_uc": 0,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 90
+      },
+      "processing_time": 2.7e-05
+    },
+    {
+      "ticket_id": "36529",
+      "detected_category": "UNKNOWN",
+      "detected_uc": 0,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 90
+      },
+      "processing_time": 2.9e-05
+    },
+    {
+      "ticket_id": "36530",
+      "detected_category": "UNKNOWN",
+      "detected_uc": 0,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 90
+      },
+      "processing_time": 2.8e-05
+    },
+    {
+      "ticket_id": "36531",
+      "detected_category": "UNKNOWN",
+      "detected_uc": 0,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 90
+      },
+      "processing_time": 2.7e-05
+    },
+    {
+      "ticket_id": "36532",
+      "detected_category": "UNKNOWN",
+      "detected_uc": 0,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 90
+      },
+      "processing_time": 2.7e-05
+    },
+    {
+      "ticket_id": "36533",
+      "detected_category": "UNKNOWN",
+      "detected_uc": 0,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 90
+      },
+      "processing_time": 2.8e-05
+    },
+    {
+      "ticket_id": "36534",
+      "detected_category": "UNKNOWN",
+      "detected_uc": 0,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 90
+      },
+      "processing_time": 2.8e-05
+    },
+    {
+      "ticket_id": "36535",
+      "detected_category": "UNKNOWN",
+      "detected_uc": 0,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 90
+      },
+      "processing_time": 2.7e-05
+    },
+    {
+      "ticket_id": "36536",
+      "detected_category": "UNKNOWN",
+      "detected_uc": 0,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 90
+      },
+      "processing_time": 2.6e-05
+    },
+    {
+      "ticket_id": "36537",
+      "detected_category": "UNKNOWN",
+      "detected_uc": 0,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 90
+      },
+      "processing_time": 2.7e-05
+    },
+    {
+      "ticket_id": "36538",
+      "detected_category": "UNKNOWN",
+      "detected_uc": 0,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 90
+      },
+      "processing_time": 2.7e-05
+    },
+    {
+      "ticket_id": "36539",
+      "detected_category": "UNKNOWN",
+      "detected_uc": 0,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 90
+      },
+      "processing_time": 2.6e-05
+    },
+    {
+      "ticket_id": "36540",
+      "detected_category": "UNKNOWN",
+      "detected_uc": 0,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 90
+      },
+      "processing_time": 2.6e-05
+    },
+    {
+      "ticket_id": "36541",
+      "detected_category": "UNKNOWN",
+      "detected_uc": 0,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 90
+      },
+      "processing_time": 2.7e-05
+    },
+    {
+      "ticket_id": "36542",
+      "detected_category": "UNKNOWN",
+      "detected_uc": 0,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 90
+      },
+      "processing_time": 2.6e-05
+    },
+    {
+      "ticket_id": "36543",
+      "detected_category": "UNKNOWN",
+      "detected_uc": 0,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 90
+      },
+      "processing_time": 2.7e-05
+    },
+    {
+      "ticket_id": "36544",
+      "detected_category": "UNKNOWN",
+      "detected_uc": 0,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 90
+      },
+      "processing_time": 2.7e-05
+    },
+    {
+      "ticket_id": "36545",
+      "detected_category": "UNKNOWN",
+      "detected_uc": 0,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 90
+      },
+      "processing_time": 2.7e-05
+    },
+    {
+      "ticket_id": "36546",
+      "detected_category": "UNKNOWN",
+      "detected_uc": 0,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 90
+      },
+      "processing_time": 2.7e-05
+    },
+    {
+      "ticket_id": "36547",
+      "detected_category": "UNKNOWN",
+      "detected_uc": 0,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 90
+      },
+      "processing_time": 2.6e-05
+    },
+    {
+      "ticket_id": "36548",
+      "detected_category": "UNKNOWN",
+      "detected_uc": 0,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 90
+      },
+      "processing_time": 2.6e-05
+    },
+    {
+      "ticket_id": "36549",
+      "detected_category": "UNKNOWN",
+      "detected_uc": 0,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 90
+      },
+      "processing_time": 2.7e-05
+    },
+    {
+      "ticket_id": "36550",
+      "detected_category": "UNKNOWN",
+      "detected_uc": 0,
+      "confidence": 0.5,
+      "response": "Bonjour, je suis l'assistant automatique FlowUp.\n\n\nJe vais vous aider au mieux.\n\nPourriez-vous me préciser votre demande concernant :\n- Une livraison ou commande ?\n- Un problème technique ?\n- Une question commerciale ?\n\nCela me permettra de mieux vous orienter.\n\n\n\nPuis-je vous aider pour autre chose ?\n",
+      "escalate": false,
+      "escalation_reason": null,
+      "priority": "NORMAL",
+      "actions_taken": [
+        "bot_presented"
+      ],
+      "performance": {
+        "category_match": true,
+        "uc_match": true,
+        "confidence": 0.5,
+        "escalation_correct": false,
+        "response_quality": 30,
+        "score": 90
+      },
+      "processing_time": 2.7e-05
+    }
+  ],
+  "statistics": {
+    "total_processed": 50,
+    "category_correct": 44,
+    "uc_correct": 42,
+    "escalated": 2,
+    "by_category": {
+      "DELIVERY": 12,
+      "SALES": 3,
+      "HARDWARE": 4,
+      "SOFTWARE": 1,
+      "UNKNOWN": 30
+    },
+    "by_priority": {
+      "NORMAL": 44,
+      "IMMEDIATE": 1,
+      "HIGH": 5
+    },
+    "category_accuracy": 0.88,
+    "uc_accuracy": 0.84,
+    "escalation_rate": 0.04
+  },
+  "performance_report": {
+    "summary": {
+      "total_processed": 50,
+      "category_accuracy": "88.0%",
+      "uc_accuracy": "84.0%",
+      "escalation_rate": "4.0%"
+    },
+    "distribution": {
+      "by_category": {
+        "DELIVERY": 12,
+        "SALES": 3,
+        "HARDWARE": 4,
+        "SOFTWARE": 1,
+        "UNKNOWN": 30
+      },
+      "by_priority": {
+        "NORMAL": 44,
+        "IMMEDIATE": 1,
+        "HIGH": 5
+      }
+    },
+    "recommendations": [
+      "Performance excellente - maintenir la configuration actuelle"
+    ]
+  }
+}

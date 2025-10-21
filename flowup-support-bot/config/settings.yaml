@@ -1,0 +1,91 @@
+# Configuration principale du flowup-support-bot
+
+# Configuration de l'application
+app:
+  name: "flowup-support-bot"
+  version: "1.0.0"
+  debug: false
+  log_level: "INFO"
+
+# Configuration de la base de données
+database:
+  host: "${DB_HOST:localhost}"
+  port: "${DB_PORT:5432}"
+  name: "${DB_NAME:flowup_support}"
+  user: "${DB_USER:postgres}"
+  password: "${DB_PASSWORD:}"
+  ssl_mode: "prefer"
+
+# Configuration Odoo
+odoo:
+  url: "${ODOO_URL:http://localhost:8069}"
+  database: "${ODOO_DB:odoo}"
+  username: "${ODOO_USER:admin}"
+  password: "${ODOO_PASSWORD:}"
+  api_key: "${ODOO_API_KEY:}"
+
+# Configuration UPS
+ups:
+  api_url: "${UPS_API_URL:https://onlinetools.ups.com}"
+  access_key: "${UPS_ACCESS_KEY:}"
+  username: "${UPS_USERNAME:}"
+  password: "${UPS_PASSWORD:}"
+  account_number: "${UPS_ACCOUNT:}"
+
+# Configuration RAG
+rag:
+  embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+  vector_store_type: "chroma"  # chroma, pinecone, weaviate
+  chunk_size: 1000
+  chunk_overlap: 200
+  similarity_threshold: 0.7
+  max_results: 5
+
+# Configuration LLM
+llm:
+  provider: "openai"  # openai, anthropic, local
+  model: "gpt-4"
+  temperature: 0.1
+  max_tokens: 2000
+  api_key: "${OPENAI_API_KEY:}"
+
+# Configuration des catégories
+categories:
+  delivery:
+    priority: 1
+    auto_resolve: true
+    escalation_threshold: 0.8
+  technical:
+    priority: 2
+    auto_resolve: false
+    escalation_threshold: 0.7
+  sales:
+    priority: 3
+    auto_resolve: false
+    escalation_threshold: 0.6
+  refund:
+    priority: 4
+    auto_resolve: false
+    escalation_threshold: 0.5
+
+# Configuration des notifications
+notifications:
+  email:
+    enabled: true
+    smtp_host: "${SMTP_HOST:}"
+    smtp_port: "${SMTP_PORT:587}"
+    smtp_user: "${SMTP_USER:}"
+    smtp_password: "${SMTP_PASSWORD:}"
+    from_email: "${FROM_EMAIL:support@flowup.com}"
+  slack:
+    enabled: false
+    webhook_url: "${SLACK_WEBHOOK:}"
+    channel: "#support"
+
+# Configuration de sécurité
+security:
+  rate_limit:
+    enabled: true
+    requests_per_minute: 60
+  api_key_required: true
+  allowed_origins: ["*"]

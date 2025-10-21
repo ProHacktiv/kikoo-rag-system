@@ -1,0 +1,13 @@
+{
+  "id": "TICKET-002",
+  "subject": "Erreur lors de la connexion à l'interface",
+  "category": "technical",
+  "solution": "Le problème était lié à la version du navigateur. J'ai guidé le client pour mettre à jour Chrome vers la dernière version et vider le cache. Le problème est maintenant résolu.",
+  "resolved_at": "2024-01-14T16:45:00Z",
+  "customer_id": "CUST-456",
+  "order_number": null,
+  "tracking_number": null,
+  "resolution_time": "45min",
+  "agent": "tech_support_1",
+  "tags": ["technical", "browser", "connection"]
+}

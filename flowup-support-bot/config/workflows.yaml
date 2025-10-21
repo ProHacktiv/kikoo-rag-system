@@ -1,0 +1,170 @@
+# Workflows par catégorie pour le flowup-support-bot
+
+# Workflow pour les demandes de livraison
+delivery_workflow:
+  name: "Gestion des demandes de livraison"
+  steps:
+    - name: "analyse_intention"
+      action: "intent_analysis"
+      required: true
+    - name: "extraction_infos"
+      action: "extract_order_info"
+      required: true
+    - name: "verification_commande"
+      action: "check_order_status"
+      required: true
+    - name: "consultation_ups"
+      action: "check_ups_tracking"
+      required: false
+    - name: "generation_reponse"
+      action: "generate_response"
+      required: true
+    - name: "mise_a_jour_ticket"
+      action: "update_ticket"
+      required: true
+  
+  escalation_rules:
+    - condition: "confidence < 0.7"
+      action: "escalate_to_human"
+    - condition: "delivery_delay > 7_days"
+      action: "escalate_to_manager"
+    - condition: "customer_sentiment == 'negative'"
+      action: "escalate_to_support"
+
+# Workflow pour le support technique
+technical_workflow:
+  name: "Support technique"
+  steps:
+    - name: "analyse_probleme"
+      action: "analyze_technical_issue"
+      required: true
+    - name: "recherche_solution"
+      action: "search_knowledge_base"
+      required: true
+    - name: "verification_compatibilite"
+      action: "check_compatibility"
+      required: false
+    - name: "generation_solution"
+      action: "generate_solution"
+      required: true
+    - name: "creation_ticket_suivi"
+      action: "create_follow_up_ticket"
+      required: false
+  
+  escalation_rules:
+    - condition: "issue_complexity == 'high'"
+      action: "escalate_to_technical_team"
+    - condition: "no_solution_found"
+      action: "escalate_to_developer"
+    - condition: "customer_frustrated"
+      action: "escalate_to_senior_support"
+
+# Workflow pour les questions commerciales
+sales_workflow:
+  name: "Support commercial"
+  steps:
+    - name: "identification_besoin"
+      action: "identify_customer_need"
+      required: true
+    - name: "recherche_produits"
+      action: "search_products"
+      required: true
+    - name: "generation_recommandations"
+      action: "generate_recommendations"
+      required: true
+    - name: "creation_devis"
+      action: "create_quote"
+      required: false
+    - name: "suivi_commercial"
+      action: "schedule_follow_up"
+      required: false
+  
+  escalation_rules:
+    - condition: "high_value_opportunity"
+      action: "escalate_to_sales_team"
+    - condition: "custom_requirements"
+      action: "escalate_to_sales_manager"
+    - condition: "competitor_mention"
+      action: "escalate_to_sales_director"
+
+# Workflow pour les retours et remboursements
+refund_workflow:
+  name: "Gestion des retours"
+  steps:
+    - name: "verification_eligibilite"
+      action: "check_refund_eligibility"
+      required: true
+    - name: "calcul_remboursement"
+      action: "calculate_refund_amount"
+      required: true
+    - name: "validation_processus"
+      action: "validate_refund_process"
+      required: true
+    - name: "initiation_remboursement"
+      action: "initiate_refund"
+      required: true
+    - name: "notification_client"
+      action: "notify_customer"
+      required: true
+  
+  escalation_rules:
+    - condition: "refund_amount > 1000"
+      action: "escalate_to_finance_manager"
+    - condition: "disputed_refund"
+      action: "escalate_to_customer_service_manager"
+    - condition: "special_circumstances"
+      action: "escalate_to_director"
+
+# Workflow générique pour les cas non classés
+generic_workflow:
+  name: "Gestion générique"
+  steps:
+    - name: "analyse_message"
+      action: "analyze_message"
+      required: true
+    - name: "recherche_contexte"
+      action: "search_context"
+      required: true
+    - name: "generation_reponse_generique"
+      action: "generate_generic_response"
+      required: true
+    - name: "proposition_escalation"
+      action: "suggest_escalation"
+      required: false
+  
+  escalation_rules:
+    - condition: "unclear_intent"
+      action: "escalate_to_human"
+    - condition: "complex_request"
+      action: "escalate_to_specialist"
+    - condition: "urgent_request"
+      action: "escalate_to_manager"
+
+# Règles d'escalation globales
+global_escalation_rules:
+  - condition: "customer_sentiment == 'very_negative'"
+    action: "immediate_escalation"
+    priority: "high"
+  - condition: "response_time > 30_minutes"
+    action: "escalate_to_available_agent"
+    priority: "medium"
+  - condition: "multiple_attempts_failed"
+    action: "escalate_to_senior_agent"
+    priority: "high"
+  - condition: "vip_customer"
+    action: "escalate_to_vip_support"
+    priority: "high"
+
+# Configuration des timeouts
+timeouts:
+  intent_analysis: 10  # secondes
+  response_generation: 30
+  database_query: 15
+  external_api_call: 60
+  total_workflow: 300
+
+# Configuration des retry
+retry_config:
+  max_attempts: 3
+  backoff_factor: 2
+  max_delay: 60

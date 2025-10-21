@@ -1,0 +1,275 @@
+# Configuration complète du chatbot FlowUp
+# Basée sur l'analyse des 50 tickets réels
+
+bot:
+  name: "FlowUp Support Bot"
+  version: "2.0.0"
+  greeting: "Bonjour, je suis l'assistant automatique FlowUp."
+  language: "fr"
+  timezone: "Europe/Paris"
+
+# Règles métier principales
+rules:
+  always_present: true
+  always_check_odoo: true
+  legal_delay_days: 12
+  auto_escalate:
+    - "remboursement"
+    - "échange" 
+    - "retour"
+    - "1 mois"
+    - "3 semaines"
+    - "urgence"
+    - "avocat"
+  
+  # Délais de réponse
+  response_times:
+    immediate: "30 minutes"
+    high: "2 heures"
+    normal: "24 heures"
+
+# Configuration des catégories et UC
+categories:
+  DELIVERY:
+    ucs: [421, 337, 426, 423, 432]
+    priority: "HIGH"
+    description: "Problèmes de livraison et suivi"
+    escalation_threshold: 1  # Escalade immédiate si délai dépassé
+    
+  HARDWARE:
+    ucs: [263, 269, 267, 270, 284]
+    priority: "HIGH"
+    description: "Problèmes matériels"
+    escalation_threshold: 3  # Après 3 tentatives de résolution
+    
+  SOFTWARE:
+    ucs: [277, 272, 289, 273, 286]
+    priority: "NORMAL"
+    description: "Problèmes logiciels"
+    escalation_threshold: 2
+    
+  SALES:
+    ucs: [336, 365, 335, 306, 368]
+    priority: "NORMAL"
+    description: "Questions commerciales"
+    escalation_threshold: 1  # Escalade immédiate pour remboursements
+
+# Mapping détaillé des UC
+uc_mappings:
+  # DELIVERY
+  421:  # Suivi livraison
+    keywords: ["suivi", "tracking", "numéro", "suivre", "où est"]
+    template: "delivery_tracking"
+    requires_odoo: true
+    
+  337:  # Estimation livraison
+    keywords: ["délai", "quand", "recevoir", "estimation", "livraison", "semaine"]
+    template: "delivery_estimation"
+    requires_odoo: true
+    legal_check: true
+    
+  426:  # Livraison incomplète
+    keywords: ["pas reçu", "manque", "incomplet", "seulement", "uniquement"]
+    template: "incomplete_delivery"
+    requires_odoo: true
+    priority: "HIGH"
+    
+  423:  # Mauvais suivi
+    keywords: ["mauvais", "erreur", "adresse", "livraison"]
+    template: "delivery_error"
+    requires_odoo: true
+    
+  432:  # Colis endommagé
+    keywords: ["endommagé", "cassé", "abîmé", "livraison"]
+    template: "damaged_delivery"
+    requires_odoo: true
+    priority: "HIGH"
+    
+  # HARDWARE
+  263:  # Carte graphique
+    keywords: ["carte graphique", "gpu", "rtx", "geforce", "graphique"]
+    template: "hardware_diagnostic"
+    solutions: "graphics_card_solutions"
+    
+  269:  # Surchauffe
+    keywords: ["surchauffe", "température", "ventilateur", "refroidissement", "chaud"]
+    template: "hardware_diagnostic"
+    solutions: "cooling_solutions"
+    
+  267:  # Alimentation
+    keywords: ["alimentation", "démarre pas", "s'allume pas", "power"]
+    template: "hardware_diagnostic"
+    solutions: "power_supply_solutions"
+    
+  270:  # Périphériques
+    keywords: ["périphérique", "clavier", "souris", "usb"]
+    template: "hardware_diagnostic"
+    solutions: "peripheral_solutions"
+    
+  284:  # Écran
+    keywords: ["écran", "moniteur", "affichage", "noir"]
+    template: "hardware_diagnostic"
+    solutions: "display_solutions"
+    
+  # SOFTWARE
+  277:  # Réseau
+    keywords: ["réseau", "internet", "wifi", "connexion", "web"]
+    template: "software_diagnostic"
+    solutions: "network_solutions"
+    
+  272:  # Windows
+    keywords: ["windows", "système", "écran bleu", "activation", "os"]
+    template: "software_diagnostic"
+    solutions: "windows_solutions"
+    
+  289:  # Logiciel
+    keywords: ["logiciel", "application", "programme"]
+    template: "software_diagnostic"
+    solutions: "software_solutions"
+    
+  273:  # Pilotes
+    keywords: ["pilote", "driver", "mise à jour"]
+    template: "software_diagnostic"
+    solutions: "driver_solutions"
+    
+  286:  # Bug
+    keywords: ["bug", "erreur", "plantage"]
+    template: "software_diagnostic"
+    solutions: "bug_solutions"
+    
+  # SALES
+  336:  # Précommande
+    keywords: ["précommande", "disponibilité", "stock", "commander"]
+    template: "pre_order_inquiry"
+    requires_odoo: true
+    
+  365:  # Commande
+    keywords: ["commande", "achat", "facture", "paiement"]
+    template: "order_inquiry"
+    requires_odoo: true
+    
+  335:  # Prix
+    keywords: ["prix", "coût", "tarif", "devis"]
+    template: "pricing_inquiry"
+    requires_odoo: true
+    
+  306:  # Remboursement
+    keywords: ["remboursement", "rembourser", "retour", "échange"]
+    template: "refund_request"
+    requires_odoo: true
+    priority: "IMMEDIATE"
+    auto_escalate: true
+    
+  368:  # Garantie
+    keywords: ["garantie", "sav", "réparation"]
+    template: "warranty_inquiry"
+    requires_odoo: true
+
+# Configuration d'escalade
+escalation:
+  immediate:
+    keywords: ["remboursement", "échange", "retour", "1 mois", "3 semaines", "urgence", "avocat"]
+    response_time: "30 minutes"
+    department: "finance"
+    
+  high:
+    keywords: ["ne marche pas", "défaut", "problème", "cassé", "endommagé"]
+    response_time: "2 heures"
+    department: "technical"
+    
+  normal:
+    response_time: "24 heures"
+    department: "support"
+
+# Configuration Odoo
+odoo:
+  url: "${ODOO_URL}"
+  database: "${ODOO_DB}"
+  username: "${ODOO_USER}"
+  password: "${ODOO_PASSWORD}"
+  timeout: 30
+  
+  # Champs à récupérer
+  order_fields:
+    - "name"
+    - "date_order"
+    - "state"
+    - "tracking_number"
+    - "order_line"
+    - "partner_id"
+    
+  # Statuts de commande
+  order_states:
+    draft: "Brouillon"
+    sale: "Confirmée"
+    done: "Terminée"
+    cancel: "Annulée"
+
+# Configuration UPS
+ups:
+  api_url: "https://onlinetools.ups.com/track/v1/details/"
+  api_key: "${UPS_API_KEY}"
+  timeout: 15
+  
+  # Statuts de livraison
+  delivery_states:
+    in_transit: "En transit"
+    delivered: "Livré"
+    exception: "Exception"
+    delayed: "Retardé"
+
+# Configuration RAG
+rag:
+  model: "text-embedding-ada-002"
+  chunk_size: 500
+  chunk_overlap: 50
+  vector_db: "chroma"
+  similarity_threshold: 0.75
+  
+  # Sources de connaissances
+  knowledge_sources:
+    - "tickets_resolved"
+    - "procedures"
+    - "faq"
+    - "technical_docs"
+
+# Configuration LLM
+llm:
+  provider: "openai"
+  model: "gpt-4"
+  temperature: 0.3
+  max_tokens: 1000
+  
+  # Prompts par catégorie
+  prompts:
+    delivery: "Tu es un assistant spécialisé dans les questions de livraison. Analyse la situation et fournis une réponse claire."
+    hardware: "Tu es un technicien spécialisé. Propose des solutions techniques étape par étape."
+    software: "Tu es un expert en support logiciel. Guide l'utilisateur dans la résolution."
+    sales: "Tu es un conseiller commercial. Aide l'utilisateur avec ses questions commerciales."
+
+# Logging
+logging:
+  level: "${LOG_LEVEL:INFO}"
+  file: "logs/bot.log"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  
+  # Métriques à tracker
+  metrics:
+    - "tickets_processed"
+    - "category_accuracy"
+    - "uc_accuracy"
+    - "escalation_rate"
+    - "response_time"
+    - "user_satisfaction"
+
+# Performance
+performance:
+  max_processing_time: 5.0  # secondes
+  confidence_threshold: 0.6
+  auto_escalate_confidence: 0.3
+  
+  # Alertes
+  alerts:
+    low_accuracy: 0.7
+    high_escalation_rate: 0.5
+    slow_processing: 3.0

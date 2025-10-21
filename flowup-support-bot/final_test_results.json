@@ -1,0 +1,81 @@
+{
+  "timestamp": "2025-10-21T16:55:28.489932",
+  "results": [
+    {
+      "message": "Bonjour, puis je avoir une estimation de livraison pour ma commande car cela fait 1 semaine que j'ai commandé et payé.",
+      "uc_detected": "UC_337",
+      "confidence": 0.8,
+      "category": "DELIVERY",
+      "escalation": false,
+      "response_length": 332
+    },
+    {
+      "message": "après avoir différentes manipulation mon pc ne redémarre toujours pas je demande l'échange ou le remboursement",
+      "uc_detected": "UC_267",
+      "confidence": 0.3,
+      "category": "HARDWARE",
+      "escalation": true,
+      "response_length": 318
+    },
+    {
+      "message": "nous avons seulement recu un ecran sur l'ensemble de la commande",
+      "uc_detected": "UC_Unknown",
+      "confidence": 0.5,
+      "category": "UNKNOWN",
+      "escalation": false,
+      "response_length": 163
+    },
+    {
+      "message": "j'aimerais savoir s'il est possible d'ajouter un SSD en plus ?",
+      "uc_detected": "UC_268",
+      "confidence": 0.3,
+      "category": "HARDWARE",
+      "escalation": false,
+      "response_length": 180
+    },
+    {
+      "message": "en pleine parti Cs mon ordinateur c'est éteint avec préparation de la réparation automatique les leds de la carte graphique s'éteigne",
+      "uc_detected": "UC_263",
+      "confidence": 0.3,
+      "category": "HARDWARE",
+      "escalation": false,
+      "response_length": 827
+    },
+    {
+      "message": "j'ai un message alerte surchauffe cpu après 5 minute mon pc s'éteint",
+      "uc_detected": "UC_269",
+      "confidence": 0.5,
+      "category": "HARDWARE",
+      "escalation": false,
+      "response_length": 89
+    },
+    {
+      "message": "j'habite maintenant au 12b rue madeleine laffitte, Montreuil, 93100. Serait-il possible de changer l'adresse ?",
+      "uc_detected": "UC_331",
+      "confidence": 0.3,
+      "category": "SALES",
+      "escalation": false,
+      "response_length": 177
+    },
+    {
+      "message": "ça va faire presque 1 mois si vous ne pouvez pas renvoyer une je demande un remboursement total",
+      "uc_detected": "UC_306",
+      "confidence": 0.3,
+      "category": "SALES",
+      "escalation": true,
+      "response_length": 315
+    }
+  ],
+  "statistics": {
+    "total_tests": 8,
+    "successful_tests": 8,
+    "escalation_count": 2,
+    "escalation_rate": 25.0,
+    "categories": {
+      "DELIVERY": 1,
+      "HARDWARE": 4,
+      "UNKNOWN": 1,
+      "SALES": 2
+    }
+  }
+}

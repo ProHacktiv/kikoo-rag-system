@@ -1,0 +1,158 @@
+{
+  "categories": {
+    "delivery": {
+      "name": "Livraison",
+      "keywords": [
+        "livraison", "delivery", "shipping", "expédition", "suivi", "tracking",
+        "délai", "delay", "retard", "UPS", "colis", "package", "commande",
+        "order", "arrivée", "arrival", "réception", "reception"
+      ],
+      "intent_patterns": [
+        "où est ma commande",
+        "quand vais-je recevoir",
+        "suivi de commande",
+        "délai de livraison",
+        "problème de livraison"
+      ],
+      "escalation_triggers": [
+        "retard de plus de 7 jours",
+        "colis perdu",
+        "livraison endommagée",
+        "adresse incorrecte"
+      ],
+      "auto_resolve": true,
+      "priority": 1
+    },
+    "technical": {
+      "name": "Support technique",
+      "keywords": [
+        "bug", "erreur", "error", "problème", "problem", "dysfonctionnement",
+        "malfunction", "aide", "help", "assistance", "support", "technique",
+        "technical", "configuration", "setup", "installation", "mise à jour",
+        "update", "version", "compatibilité", "compatibility"
+      ],
+      "intent_patterns": [
+        "ça ne marche pas",
+        "erreur lors de",
+        "problème avec",
+        "comment faire",
+        "aide pour"
+      ],
+      "escalation_triggers": [
+        "erreur critique",
+        "données perdues",
+        "sécurité compromise",
+        "problème de performance majeur"
+      ],
+      "auto_resolve": false,
+      "priority": 2
+    },
+    "sales": {
+      "name": "Commercial",
+      "keywords": [
+        "prix", "price", "coût", "cost", "devis", "quote", "commander",
+        "order", "achat", "purchase", "produit", "product", "fonctionnalité",
+        "feature", "comparaison", "comparison", "recommandation",
+        "recommendation", "offre", "offer", "promotion", "réduction",
+        "discount"
+      ],
+      "intent_patterns": [
+        "combien coûte",
+        "prix de",
+        "devis pour",
+        "commander",
+        "quelle version",
+        "recommandation"
+      ],
+      "escalation_triggers": [
+        "gros volume",
+        "entreprise",
+        "contrat personnalisé",
+        "concurrence mentionnée"
+      ],
+      "auto_resolve": false,
+      "priority": 3
+    },
+    "refund": {
+      "name": "Retours et remboursements",
+      "keywords": [
+        "retour", "return", "remboursement", "refund", "annulation",
+        "cancellation", "annuler", "cancel", "récupérer", "recover",
+        "argent", "money", "paiement", "payment", "facture", "invoice"
+      ],
+      "intent_patterns": [
+        "annuler ma commande",
+        "retourner le produit",
+        "remboursement",
+        "annuler",
+        "récupérer mon argent"
+      ],
+      "escalation_triggers": [
+        "montant élevé",
+        "dispute",
+        "circumstances spéciales",
+        "client mécontent"
+      ],
+      "auto_resolve": false,
+      "priority": 4
+    }
+  },
+  "intent_classification": {
+    "confidence_thresholds": {
+      "delivery": 0.7,
+      "technical": 0.8,
+      "sales": 0.6,
+      "refund": 0.9
+    },
+    "fallback_category": "generic",
+    "multi_intent_handling": "primary_intent"
+  },
+  "escalation_matrix": {
+    "delivery": {
+      "low_confidence": "escalate_to_human",
+      "high_urgency": "escalate_to_manager",
+      "negative_sentiment": "escalate_to_senior_agent"
+    },
+    "technical": {
+      "complex_issue": "escalate_to_technical_team",
+      "no_solution": "escalate_to_developer",
+      "data_loss": "escalate_to_immediate"
+    },
+    "sales": {
+      "high_value": "escalate_to_sales_team",
+      "enterprise": "escalate_to_sales_manager",
+      "competitor": "escalate_to_sales_director"
+    },
+    "refund": {
+      "high_amount": "escalate_to_finance",
+      "dispute": "escalate_to_customer_service_manager",
+      "special_case": "escalate_to_director"
+    }
+  },
+  "response_templates": {
+    "delivery": {
+      "greeting": "Bonjour ! Je vais vous aider avec votre demande de livraison.",
+      "tracking": "Voici les informations de suivi pour votre commande :",
+      "delay": "Je comprends votre préoccupation concernant le délai. Laissez-moi vérifier...",
+      "resolution": "Votre problème de livraison a été résolu. Voici les détails :"
+    },
+    "technical": {
+      "greeting": "Bonjour ! Je vais vous aider à résoudre ce problème technique.",
+      "diagnosis": "D'après votre description, il semble que...",
+      "solution": "Voici la solution étape par étape :",
+      "escalation": "Ce problème nécessite une expertise technique avancée. Je vais transférer votre demande."
+    },
+    "sales": {
+      "greeting": "Bonjour ! Je suis là pour vous aider avec vos questions commerciales.",
+      "product_info": "Voici les informations sur le produit qui vous intéresse :",
+      "recommendation": "Basé sur vos besoins, je recommande :",
+      "quote": "Je vais préparer un devis personnalisé pour vous."
+    },
+    "refund": {
+      "greeting": "Bonjour ! Je vais vous aider avec votre demande de retour/remboursement.",
+      "eligibility": "Votre demande est éligible au remboursement selon nos conditions.",
+      "process": "Voici le processus de remboursement :",
+      "timeline": "Le remboursement sera traité dans les 5-7 jours ouvrés."
+    }
+  }
+}

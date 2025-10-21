@@ -1,0 +1,39 @@
+{
+  "entries": [
+    {
+      "id": "FAQ-001",
+      "question": "Comment suivre ma commande ?",
+      "answer": "Vous pouvez suivre votre commande de plusieurs façons : 1) Avec votre numéro de commande (SO, COMMANDE, ORD) dans votre espace client, 2) Avec votre numéro de suivi UPS (1Z...) sur le site UPS, 3) En nous contactant directement.",
+      "category": "delivery",
+      "tags": ["suivi", "commande", "ups"]
+    },
+    {
+      "id": "FAQ-002",
+      "question": "Quels sont les délais de livraison ?",
+      "answer": "Nos délais de livraison sont : France métropolitaine : 2-3 jours ouvrés, Europe : 3-5 jours ouvrés, International : 5-10 jours ouvrés. Les délais peuvent varier selon la destination et les conditions météorologiques.",
+      "category": "delivery",
+      "tags": ["délai", "livraison", "france", "europe"]
+    },
+    {
+      "id": "FAQ-003",
+      "question": "Comment annuler ma commande ?",
+      "answer": "Vous pouvez annuler votre commande si elle n'a pas encore été expédiée. Contactez-nous avec votre numéro de commande et nous traiterons votre demande. Les commandes déjà expédiées ne peuvent pas être annulées mais peuvent être retournées.",
+      "category": "refund",
+      "tags": ["annulation", "commande", "retour"]
+    },
+    {
+      "id": "FAQ-004",
+      "question": "Problème de connexion à l'interface",
+      "answer": "Si vous avez des problèmes de connexion : 1) Vérifiez votre connexion internet, 2) Videz le cache de votre navigateur, 3) Essayez un autre navigateur, 4) Vérifiez que JavaScript est activé. Si le problème persiste, contactez notre support technique.",
+      "category": "technical",
+      "tags": ["connexion", "interface", "navigateur", "cache"]
+    },
+    {
+      "id": "FAQ-005",
+      "question": "Comment obtenir un devis personnalisé ?",
+      "answer": "Pour obtenir un devis personnalisé, contactez notre équipe commerciale en précisant vos besoins : nombre d'utilisateurs, fonctionnalités souhaitées, intégrations nécessaires. Nous vous proposerons une solution adaptée avec un devis détaillé sous 24h.",
+      "category": "sales",
+      "tags": ["devis", "commercial", "personnalisé", "prix"]
+    }
+  ]
+}
