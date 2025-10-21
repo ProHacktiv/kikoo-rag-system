@@ -1,0 +1,162 @@
+[
+  {
+    "ticket_id": 1000,
+    "ticket_name": "TICKET-UC336-1000",
+    "subject": "Statut précommande RTX 4090",
+    "description": "Demande de suivi pour précommande - Jean Dupont",
+    "create_date": "2024-06-22 00:00:00",
+    "partner_id": [
+      1,
+      "Jean Dupont"
+    ],
+    "priority": "1",
+    "uc_number": "UC_336",
+    "first_customer_message": "Bonjour, j'ai passé une commande il y a 2 semaines et je n'ai toujours pas de nouvelles. Pouvez-vous me dire où en est ma précommande ?",
+    "customer_name": "Jean Dupont",
+    "customer_email": "client1@example.com"
+  },
+  {
+    "ticket_id": 1001,
+    "ticket_name": "TICKET-UC336-1001",
+    "subject": "Suivi commande RTX 4080",
+    "description": "Demande de suivi pour précommande - Marie Martin",
+    "create_date": "2024-08-09 00:00:00",
+    "partner_id": [
+      2,
+      "Marie Martin"
+    ],
+    "priority": "1",
+    "uc_number": "UC_336",
+    "first_customer_message": "Salut, j'ai commandé une RTX 4090 en précommande il y a un mois. Avez-vous des informations sur la disponibilité ?",
+    "customer_name": "Marie Martin",
+    "customer_email": "client2@example.com"
+  },
+  {
+    "ticket_id": 1002,
+    "ticket_name": "TICKET-UC336-1002",
+    "subject": "Information précommande RTX 4070",
+    "description": "Demande de suivi pour précommande - Pierre Durand",
+    "create_date": "2025-04-12 00:00:00",
+    "partner_id": [
+      3,
+      "Pierre Durand"
+    ],
+    "priority": "0",
+    "uc_number": "UC_336",
+    "first_customer_message": "Bonjour, je voudrais savoir le statut de ma précommande pour la RTX 4080. Quand sera-t-elle disponible ?",
+    "customer_name": "Pierre Durand",
+    "customer_email": "client3@example.com"
+  },
+  {
+    "ticket_id": 1003,
+    "ticket_name": "TICKET-UC336-1003",
+    "subject": "Statut livraison RTX 4060",
+    "description": "Demande de suivi pour précommande - Sophie Bernard",
+    "create_date": "2024-08-06 00:00:00",
+    "partner_id": [
+      4,
+      "Sophie Bernard"
+    ],
+    "priority": "0",
+    "uc_number": "UC_336",
+    "first_customer_message": "Hello, j'ai réservé une carte graphique en précommande mais je n'ai aucune nouvelle depuis 3 semaines. Pouvez-vous m'aider ?",
+    "customer_name": "Sophie Bernard",
+    "customer_email": "client4@example.com"
+  },
+  {
+    "ticket_id": 1004,
+    "ticket_name": "TICKET-UC336-1004",
+    "subject": "Suivi précommande GPU",
+    "description": "Demande de suivi pour précommande - Lucas Moreau",
+    "create_date": "2025-06-30 00:00:00",
+    "partner_id": [
+      5,
+      "Lucas Moreau"
+    ],
+    "priority": "0",
+    "uc_number": "UC_336",
+    "first_customer_message": "Bonjour, j'aimerais connaître l'avancement de ma précommande pour la RTX 4070. Y a-t-il des retards prévus ?",
+    "customer_name": "Lucas Moreau",
+    "customer_email": "client5@example.com"
+  },
+  {
+    "ticket_id": 1005,
+    "ticket_name": "TICKET-UC336-1005",
+    "subject": "Information commande carte graphique",
+    "description": "Demande de suivi pour précommande - Emma Petit",
+    "create_date": "2024-07-13 00:00:00",
+    "partner_id": [
+      6,
+      "Emma Petit"
+    ],
+    "priority": "0",
+    "uc_number": "UC_336",
+    "first_customer_message": "Salut, j'ai commandé un GPU en précommande il y a longtemps et je n'ai pas de suivi. Pouvez-vous me renseigner ?",
+    "customer_name": "Emma Petit",
+    "customer_email": "client6@example.com"
+  },
+  {
+    "ticket_id": 1006,
+    "ticket_name": "TICKET-UC336-1006",
+    "subject": "Statut précommande RTX 4090",
+    "description": "Demande de suivi pour précommande - Thomas Roux",
+    "create_date": "2024-03-11 00:00:00",
+    "partner_id": [
+      7,
+      "Thomas Roux"
+    ],
+    "priority": "0",
+    "uc_number": "UC_336",
+    "first_customer_message": "Bonjour, je voudrais savoir où en est ma précommande pour la RTX 4060. Quand sera-t-elle prête ?",
+    "customer_name": "Thomas Roux",
+    "customer_email": "client7@example.com"
+  },
+  {
+    "ticket_id": 1007,
+    "ticket_name": "TICKET-UC336-1007",
+    "subject": "Suivi livraison RTX 4080",
+    "description": "Demande de suivi pour précommande - Léa Simon",
+    "create_date": "2024-08-13 00:00:00",
+    "partner_id": [
+      8,
+      "Léa Simon"
+    ],
+    "priority": "0",
+    "uc_number": "UC_336",
+    "first_customer_message": "Hello, j'ai réservé une carte graphique mais je n'ai aucune information sur la livraison. Pouvez-vous m'aider ?",
+    "customer_name": "Léa Simon",
+    "customer_email": "client8@example.com"
+  },
+  {
+    "ticket_id": 1008,
+    "ticket_name": "TICKET-UC336-1008",
+    "subject": "Information précommande RTX 4070",
+    "description": "Demande de suivi pour précommande - Antoine Laurent",
+    "create_date": "2025-08-21 00:00:00",
+    "partner_id": [
+      9,
+      "Antoine Laurent"
+    ],
+    "priority": "1",
+    "uc_number": "UC_336",
+    "first_customer_message": "Bonjour, j'aimerais connaître le statut de ma précommande. Y a-t-il des nouvelles sur la disponibilité ?",
+    "customer_name": "Antoine Laurent",
+    "customer_email": "client9@example.com"
+  },
+  {
+    "ticket_id": 1009,
+    "ticket_name": "TICKET-UC336-1009",
+    "subject": "Statut commande RTX 4060",
+    "description": "Demande de suivi pour précommande - Camille Garcia",
+    "create_date": "2025-04-10 00:00:00",
+    "partner_id": [
+      10,
+      "Camille Garcia"
+    ],
+    "priority": "2",
+    "uc_number": "UC_336",
+    "first_customer_message": "Salut, j'ai commandé en précommande il y a un moment et je n'ai pas de nouvelles. Pouvez-vous me dire où ça en est ?",
+    "customer_name": "Camille Garcia",
+    "customer_email": "client10@example.com"
+  }
+]
